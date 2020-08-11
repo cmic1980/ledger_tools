@@ -1,0 +1,23 @@
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "match": {
+            "message_type": "transition"
+          }
+        },
+        {
+          "match": {
+            "dbId": 12
+          }
+        },
+        {
+          "match": {
+            "type": 3
+          }
+        }
+      ]
+    }
+  }
+}
